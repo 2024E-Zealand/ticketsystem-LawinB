@@ -9,23 +9,23 @@ using System.Threading.Tasks;
 namespace TicketClassLibraryTests
 {
     /// <summary>
-    /// Unit tests for the Car class.
+    /// Unit tests for the MC class.
     /// </summary>
     [TestClass()]
-    public class CarTests
+    public class MCTests
     {
         [TestMethod()]
         /// <summary>
-        /// Tests that the Price method returns the correct fixed price.
+        /// Tests that the Price method returns the correct fixed price for MC.
         /// </summary>
-        public void Price_ShouldReturnFixedPriceOf240()
+        public void Price_ShouldReturnFixedPriceOf125()
         {
             // Arrange
-            var car = new Car();
+            var mc = new MC();
 
-            int expectedPrice = 240;
+            int expectedPrice = 125;
             // Act
-            var price = car.Price();
+            var price = mc.Price();
 
             // Assert
             Assert.AreEqual(expectedPrice, price);
@@ -33,18 +33,18 @@ namespace TicketClassLibraryTests
 
         [TestMethod()]
         /// <summary>
-        /// Tests that the VehicleType method returns "Car".
+        /// Tests that the VehicleType method returns "MC".
         /// </summary>
-        public void VehicleType_ShouldReturnCar()
+        public void VehicleType_ShouldReturnMC()
         {
             // Arrange
-            var car = new Car();
+            var mc = new MC();
 
             // Act
-            var vehicleType = car.VehicleType();
+            var vehicleType = mc.VehicleType();
 
             // Assert
-            Assert.AreEqual("Car", vehicleType);
+            Assert.AreEqual("MC", vehicleType);
         }
     }
 }
