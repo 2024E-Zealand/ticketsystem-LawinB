@@ -60,7 +60,7 @@ namespace TicketClassLibraryTests
                 var price = car.Price();
 
                 // Assert
-                Assert.AreEqual(240.0, price, 0.01);
+                Assert.AreEqual(240, price, 0.01);
             }
 
             [TestMethod()]
@@ -76,7 +76,7 @@ namespace TicketClassLibraryTests
                 var price = mc.Price();
 
                 // Assert
-                Assert.AreEqual(125.0, price, 0.01);
+                Assert.AreEqual(125, price, 0.01);
             }
     }
 }
