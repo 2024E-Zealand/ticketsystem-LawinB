@@ -7,37 +7,26 @@ using System.Threading.Tasks;
 namespace TicketClassLibrary
 {
     /// <summary>
-    /// Represents a motorcycle (MC) with a license plate and date.
+    /// Represents a motorcycle (MC).
     /// </summary>
-    public class MC
+    public class MC : Vehicle
     {
         /// <summary>
-        /// Gets or sets the license plate of the motorcycle.
+        /// Returns the price for the motorcycle, which is fixed at 125.
         /// </summary>
-        public string Licenseplate { get; set; }
-
-        /// <summary>
-        /// Gets or sets the date associated with the motorcycle (e.g., parking or ticket date).
-        /// </summary>
-        public DateTime Date { get; set; }
-
-        /// <summary>
-        /// Returns the price for the motorcycle, which is fixed at 125 kr.
-        /// </summary>
-        /// <returns>The fixed price of 125 kr.</returns>
-        public double Price()
+        /// <returns>The fixed price of 125.</returns>
+        public override double Price()
         {
             return 125;
         }
 
         /// <summary>
-        /// Returns the type of the vehicle, which is always "MC".
+        /// Returns the type of the vehicle, which is "MC".
         /// </summary>
         /// <returns>A string representing the vehicle type, "MC".</returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "MC";
         }
     }
 }
-
