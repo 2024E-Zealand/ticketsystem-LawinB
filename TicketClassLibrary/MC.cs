@@ -17,7 +17,8 @@ namespace TicketClassLibrary
         /// <returns>The fixed price of 125.</returns>
         public override double Price()
         {
-            return 125;
+            double basePrice = 125;
+            return ApplyBrobizzDiscount(basePrice);
         }
 
         /// <summary>
