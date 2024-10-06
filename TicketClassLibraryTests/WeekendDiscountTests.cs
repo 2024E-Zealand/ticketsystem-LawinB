@@ -81,6 +81,7 @@ namespace TicketClassLibrary.Tests
 
             // Assert
             Assert.AreEqual(240, price, 0.01);
+            
         }
     }
 }
